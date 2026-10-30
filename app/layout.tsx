@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Cinzel, Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { Cinzel, Inter, Playfair_Display } from "next/font/google";
+
 
 const serif = Playfair_Display({ subsets: ["latin"], variable: "--font-serif", display: "swap" });
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
