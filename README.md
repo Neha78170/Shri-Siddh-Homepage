@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shri Siddh Hotel — Homepage
 
-## Getting Started
+A single-page luxury hotel homepage built with **Next.js 15** and **React 19**, with no UI libraries. All styling is plain CSS and all animations are hand-written.
 
-First, run the development server:
+## Features
+
+- Sticky header that turns solid on scroll, with a mobile menu
+- Hero with slow zoom, word-by-word headline animation and a booking bar (date pickers, guests picker, availability check)
+- Room cards with a cursor-following "View" badge
+- Parallax "Everything You Need" services band
+- Video section that opens a full-screen slideshow tour
+- Facilities grid, auto-playing draggable reviews carousel
+- Masonry gallery with a keyboard-friendly lightbox
+- Journal cards, social links, newsletter form with validation
+- Scroll-reveal animations, scroll progress bar, back-to-top button
+- Responsive down to mobile; respects `prefers-reduced-motion`
+
+The booking and newsletter forms are front-end only; they don't send data anywhere.
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customising
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Content** (rooms, prices, services, reviews, gallery, blog posts, footer links): `lib/data.ts`
+- **Styles and animations**: `app/globals.css`
+- **Sections**: `components/Hero.tsx` and `components/Sections.tsx`
+- **Hero and footer images**: `public/hero-hotel.webp`, `public/footer-skyline.png`
 
-## Learn More
+Other photos are loaded from [Unsplash](https://unsplash.com) under the Unsplash License. Reviews, address, phone numbers and prices are placeholder content.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[MIT](LICENSE). Free to use, copy, modify and distribute.
