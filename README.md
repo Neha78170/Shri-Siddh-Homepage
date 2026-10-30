@@ -1,6 +1,6 @@
 # Shri Siddh Hotel — Homepage
 
-A single-page luxury hotel homepage built with **Next.js 15** and **React 19**, with no UI libraries. All styling is plain CSS and all animations are hand-written.
+A single-page luxury hotel homepage built with **Next.js 15** and **React 19**, with no UI libraries. All styling is tailwind CSS and plain css  all animations are hand-written.
 
 ## Features
 
@@ -9,9 +9,10 @@ A single-page luxury hotel homepage built with **Next.js 15** and **React 19**, 
 - Room cards with a cursor-following "View" badge
 - Parallax "Everything You Need" services band
 - Video section that opens a full-screen slideshow tour
+
 - Facilities grid, auto-playing draggable reviews carousel
 - Masonry gallery with a keyboard-friendly lightbox
-- Journal cards, social links, newsletter form with validation
+- Journal cards, social links, newsletter form with validation .
 - Scroll-reveal animations, scroll progress bar, back-to-top button
 - Responsive down to mobile; respects `prefers-reduced-motion`
 
@@ -37,4 +38,4 @@ Other photos are loaded from [Unsplash](https://unsplash.com) under the Unsplash
 
 ## License
 
-[MIT](LICENSE). Free to use, copy, modify and distribute.
+[MIT](LICENSE). Free to use, copy, modify and distribute
